@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #1f2328;
+    background: white;
+    line-height: 1.5;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top-section {
+    background: #f6f8fa;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0d1117;
+}
+
+.main-text {
+    font-size: 20px;
+    color: #656d76;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.big-button {
+    display: inline-block;
+    background: #1f2328;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #d0d7de;
+    cursor: pointer;
+}
+
+.black-button {
+    background: #1f2328;
+    color: white;
+    border-color: #1f2328;
+}
+
+.outline-button {
+    background: white;
+    color: #1f2328;
+    border-color: #d0d7de;
+}
+
+.full-width {
+    display: block;
+    width: 100%;
+}
+
+.plans-section {
+    padding: 80px 0;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.plan-card {
+    border: 4px solid #d0d7de;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+}
+
+.plan-card.popular {
+    border-color: #166bff;
+    box-shadow: 0 8px 24px rgba(31, 35, 40, 0.15);
+}
+
+.popular-badge {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: #166bff;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.plan-top {
+    padding: 30px;
+    border-bottom: 1px solid #d0d7de;
+    text-align: center;
+}
+
+.plan-top h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.plan-subtitle {
+    color: #656d76;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+.price-number {
+    font-size: 48px;
+    font-weight: 700;
+    display: block;
+}
+
+.price-text {
+    color: #656d76;
+    font-size: 14px;
+}
+
+.plan-content {
+    padding: 30px;
+}
+
+.includes {
+    font-size: 14px;
+    color: #656d76;
+    margin-bottom: 20px;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.features li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.circle-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #1f2328;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.addons-note {
+    font-size: 14px;
+}
+.featured-add-ons {
+    color: #146dcb;
+    font-size: 16px;
+}
+
+.addons-note strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #1f2328;
+}
+
+.addons-note p {
+    margin: 5px 0;
+    color: #656d76;
+}
+
+.addons-section {
+    padding: 80px 0;
+    background: #f6f8fa;
+    border-top: 1px solid #d0d7de;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.addons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.addon-card {
+    background: white;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+
+
+.addon-icon {
+    width: 80px;
+    height: 80px;
+    background: #f6f8fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 36px;
+    color: white;
+}
+
+.addon-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #1f2328;
+}
+
+.addon-desc {
+    color: #656d76;
+    font-size: 14px;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.addon-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #656d76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.addon-logo i {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .plans-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .addons-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .main-text {
+        font-size: 18px;
+    }
+
+    .big-button {
+        font-size: 18px;
+        padding: 14px 30px;
+    }
+
+    .top-section {
+        padding: 60px 0;
+    }
+
+    .plans-section,
+    .addons-section {
+        padding: 60px 0;
+    }
+
+    .price-number {
+        font-size: 40px;
+    }
+
+    .addon-card {
+        padding: 25px;
+        padding-bottom: 55px;
+    }
+}

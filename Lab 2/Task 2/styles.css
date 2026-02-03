@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.top {
+    display: flex;
+    flex: 1;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.left {
+    width: 60%;
+    padding: 40px;
+    border-right: 1px solid #dbdbdb;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    position: relative;
+    top: -50px;
+    left: -50px;
+}
+.Inst-Image {
+    margin-left:210px;
+}
+.Description {
+    font-size:30px;
+    max-width: 350px;
+    text-align: center;
+    margin-left: 300px;
+    font-family:"Segoe";
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+
+}
+.close-friends{
+    background: linear-gradient(to right, orange, red, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline;
+    font-family: inherit;
+}
+.right {
+    width: 40%;
+    padding: 175px;
+    padding-left: 50px;
+}
+.Login-form {
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+
+}
+.text {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.Login-input {
+    border-radius: 8px;
+    width: 100%;
+    border:0.5px solid black;
+    margin-bottom: 7px;
+    padding: 12px;
+}
+.Password-input {
+    border-radius: 8px;
+    width: 100%;
+    border:1px solid black;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.Login-button {
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #1c53cb;
+    color:white;
+    border:0;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.Forgot-Password {
+    color: black;
+    margin-left:150px;
+    margin-bottom:50px;
+    cursor: pointer;
+}
+.Forgot-Password-Text {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.Forgot-Password:hover {
+    text-decoration: underline;
+}
+.Facebook-login {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background:white;
+    border:1px solid black;
+    font-weight:bold;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.Facebook-logo{
+    width: 15px;
+    margin-right:5px;
+    vertical-align: middle;
+
+}
+.New-Account {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background:white;
+    border:1px solid #166bff;
+    color:#166bff;
+    font-weight:bold;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.bottom {
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #dbdbdb;
+    font-size: 13px;
+    color: #8e8e8e;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #8e8e8e;
+    padding:5px;
+
+}
+
+
+
+
+
