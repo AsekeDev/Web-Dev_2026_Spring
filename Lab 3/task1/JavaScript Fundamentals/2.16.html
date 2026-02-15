@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //         let age = prompt("What is your age?", 18);
+
+    // // conditionally declare a function
+    // if (age < 18) {
+
+    //   function welcome() {
+    //     alert("Hello!");
+    //   }
+
+    // } else {
+
+    //   function welcome() {
+    //     alert("Greetings!");
+    //   }
+
+    // }
+
+    // // ...use it later
+    // welcome(); // Error: welcome is not defined
+    let age = prompt("What is your age?", 18);
+
+    let welcome;
+
+    if (age < 18) {
+
+        welcome = function() {
+            alert("Hello!");
+        };
+
+    } else {
+
+        welcome = function() {
+            alert("Greetings!");
+        };
+
+    }
+
+    welcome(); // ok now
+
+</script>
+</body>
+</html>

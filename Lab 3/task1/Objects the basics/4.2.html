@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  let user = { name: 'John' };
+  let admin = user;
+  admin.name = 'Pete'; // changed by the "admin" reference
+  alert(user.name); // 'Pete', changes are seen from the "user" reference
+
+
+  let a = {};
+  let b = a; // copy the reference
+  alert( a == b ); // true, both variables reference the same object
+  alert( a === b ); // true
+
+
+
+  let users = { name: "John" };
+
+  let permissions1 = { canView: true };
+  let permissions2 = { canEdit: true };
+
+  // copies all properties from permissions1 and permissions2 into user
+  Object.assign(user, permissions1, permissions2);
+
+  // now user = { name: "John", canView: true, canEdit: true }
+  alert(users.name); // John
+  alert(users.canView); // true
+  alert(users.canEdit); // true
+</script>
+</body>
+</html>

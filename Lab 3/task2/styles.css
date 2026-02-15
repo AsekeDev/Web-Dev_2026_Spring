@@ -1,0 +1,80 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.topbar{
+    display: flex;
+    background-color: #1f2328;
+    color: #8e8e8e;
+    height: 50px;
+    align-items: center;
+}
+.topbartext {
+    padding: 50px;
+}
+
+.main{
+    display: flex;
+    max-width: 900px;
+    height: 500px;
+    margin: 48px auto;
+    flex-direction: column;
+}
+.title {
+    font-size: 35px;
+}
+.Input{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin:20px 0;
+    height:50%;
+}
+.InputTask{
+    padding:5px;
+    width: 70%;
+    border-radius: 5px;
+}
+.button{
+    width:5%;
+    background-color: #166bff;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+.Card {
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.List {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 35px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.task-item-label{
+    display: flex;
+    gap:20px;
+}
+.task-item-detail{
+    color:red;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #777;
+}
+

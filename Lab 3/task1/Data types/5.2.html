@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  let a = +prompt("The first number?", "");
+  let b = +prompt("The second number?", "");
+
+  alert( a + b );
+  alert( 6.35.toFixed(20) ); // 6.34999999999999964473
+  alert( 1.35.toFixed(20) ); // 1.35000000000000008882
+  alert( (6.35 * 10).toFixed(20) ); // 63.50000000000000000000
+  alert( Math.round(6.35 * 10) / 10 ); // 6.35 -> 63.5 -> 64(rounded) -> 6.4
+
+  let i = 0;
+  while (i < 11){
+    i += 0.2;
+    if (i > 9.8 && i < 10.2) alert( i );
+  }
+
+</script>
+</body>
+</html>
